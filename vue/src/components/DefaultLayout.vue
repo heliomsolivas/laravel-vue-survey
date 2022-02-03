@@ -202,14 +202,12 @@ export default {
     const router = useRouter();
 
     function logout() {
-      store.dispatch("logout");
-
-      router.push({
-        name: "Login",
+      store.dispatch("logout").then(() => {
+        router.push({
+          name: "Login",
+        });
       });
     }
-
-    // store.dispatch("getUser");
 
     return {
       user: computed(() => store.state.user.data),

@@ -3,12 +3,14 @@ import axiosClient from "../axios";
 
 const tmpSurveys = [
   {
-    id: 100,
-    title: "Teste Teste",
-    slug: "teste-teste",
+    id: 1,
+    title: "Vue 3",
+    slug: "vue-3",
     status: "draft",
-    image: null,
-    description: "Description of teste",
+    image_url:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png",
+    description:
+      "O Vue.js conta com uma arquitetura que pode ser adotada de forma incremental, e que foca na renderização declarativa e na composição de componentes. Funcionalidades avançadas necessárias para aplicações complexas (como encaminhamento, gestão de estados e automação de compilação) são oferecidas por meio de bibliotecas e pacotes de suporte mantidos oficialmente, sendo o Nuxt.js como uma das soluções mais populares.",
     created_at: "2021-01-01 18:00:00",
     updated_at: "2021-01-01 18:00:00",
     expire_date: "2021-01-31 18:00:00",
@@ -32,6 +34,20 @@ const tmpSurveys = [
         },
       },
     ],
+  },
+  {
+    id: 2,
+    title: "Vue 2",
+    slug: "vue-2",
+    status: "draft",
+    image_url:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png",
+    description:
+      "O Vue.js conta com uma arquitetura que pode ser adotada de forma incremental, e que foca na renderização declarativa e na composição de componentes. Funcionalidades avançadas necessárias para aplicações complexas (como encaminhamento, gestão de estados e automação de compilação) são oferecidas por meio de bibliotecas e pacotes de suporte mantidos oficialmente, sendo o Nuxt.js como uma das soluções mais populares.",
+    created_at: "2021-01-01 18:00:00",
+    updated_at: "2021-01-01 18:00:00",
+    expire_date: "2021-01-31 18:00:00",
+    questions: [],
   },
 ];
 

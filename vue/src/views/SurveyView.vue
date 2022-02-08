@@ -202,7 +202,7 @@
           <div v-if="!model.questions.length" class="text-center text-gray-600">
             You don't have any questions created
           </div>
-          <!-- <div v-for="(question, index) in model.questions" :key="question.id">
+          <div v-for="(question, index) in model.questions" :key="question.id">
             <QuestionEditor
               :question="question"
               :index="index"
@@ -210,7 +210,7 @@
               @addQuestion="addQuestion"
               @deleteQuestion="deleteQuestion"
             />
-          </div> -->
+          </div>
         </div>
 
         <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
@@ -231,7 +231,7 @@ import { computed, ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import store from "../store";
 import PageComponent from "../components/PageComponent.vue";
-
+import QuestionEditor from "../components/editor/QuestionEditor.vue";
 const router = useRouter();
 
 const route = useRoute();
